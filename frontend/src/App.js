@@ -12,7 +12,9 @@ const App = () => {
       <Header />
       <main className="py-3">
         <Container>
+          {/* Home screen is the frontpage */}
           <Route path='/' component={HomeScreen} exact />
+          {/* The Product screen is mainly for each product details description */}
           <Route path='/product/:id' component={ProductScreen} />
         </Container>
       </main>
